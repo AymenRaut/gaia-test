@@ -1,0 +1,31 @@
+<div class="causelist-tenders-container">
+    <div class="causelist">
+        <div class="heading-block">
+            <div class="shape"></div>
+            <p>CAUSE LIST</p>
+        </div>
+        <div id="block">
+            <div class="detail-block cause-block">
+                <label class="cause-label">Select Date</label>
+                <input class="date-input" type="date">
+                <div class="cause-buttons">
+                    <div class="submit"><div class="trapezoid-right"></div><a class="readmore-link">Submit</a></div>
+                    <div class="back"><div class="trapezoid-left"></div><a class="back-link">Back</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tenders">
+        <div class="heading-block">
+            <div class="shape"></div>
+            <p>TENDERS</p>
+        </div>
+        <div id="block" *ngFor="let text of textArray">
+            <div class="detail-block">
+                <img src="../../assets/logo2.png">
+                <p>{{text}}</p>
+            </div>
+            <div class="readmore-button"><div class="trapezoid-right"></div><a class="readmore-link">Read more</a></div>
+        </div>
+    </div>
+</div>

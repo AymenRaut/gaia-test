@@ -1,0 +1,123 @@
+@import "../../styles.scss";
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading-block{
+    position: relative;
+
+    p{
+        position: absolute;
+        top: 0.5vh;
+        left: 1vw;
+        color: white;
+    }
+}
+
+.shape{
+    position:relative;
+    width: 20.5vw;
+    height: 6vh;
+    overflow:hidden;
+}
+
+.shape:after{
+   content: "";
+   position:absolute;
+   margin: -1vw 19.6vw;
+   width:2vw;
+   height:2vw;
+   transform:rotate(45deg);
+   box-shadow: 0 0 0 16vw $gaia-orange;
+}
+
+
+#block{
+    margin: 0.5vw 0;
+}
+
+.detail-block{
+    border: solid 0.25vw $gaia-green;
+    width: 20vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 10%;
+    height: 40%;
+    margin: 0.25vw;
+}
+
+p{
+    font-size: 0.8vw;
+    color: $gaia-grey;
+    margin: 1.5vw 0;
+}
+
+.cause-block{
+    flex-direction: column;
+    padding: 1.5vw 0;
+}
+
+.date-input{
+    padding: 0.5vw;  
+    margin: 0.5vw;
+    border-color: $gaia-grey;  
+}
+
+.readmore-button{
+    position: relative;
+    top: -1.65vw;
+    left: 15.4vw;
+}
+
+.readmore-link{
+    text-decoration: none;
+    color:white;
+    position: absolute;
+    top: 0.45vw;
+    left: 0.6vw;
+    font-size: 0.65vw;
+}
+
+.trapezoid-right{
+    border-top: 1.5vw solid $gaia-green;
+	border-right: 1vw solid transparent;
+	height: 0;
+	width: 4vw;
+    position: absolute;
+    top: 0;
+}
+
+.trapezoid-left{
+    border-bottom: 1.5vw solid $gaia-green;
+	border-left: 1vw solid transparent;
+	height: 0;
+	width: 4vw;
+    position: absolute;
+    top: 0;
+}
+
+.submit {
+    position: relative;
+    top: 0.1vw;
+    left: 0vw;
+}
+
+.back {
+    position: relative;
+    top: 0.1vw;
+    left: 5.2vw;
+}
+
+.back-link{
+    text-decoration: none;
+    color:white;
+    position: absolute;
+    top: 0.45vw;
+    left: 2vw;
+    font-size: 0.65vw;
+}

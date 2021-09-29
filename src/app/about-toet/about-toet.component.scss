@@ -1,0 +1,59 @@
+@import "../../styles.scss";
+
+.about-container{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-start{
+    flex:2;
+    position: relative;
+}
+
+.info-text{
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 15vw;
+    color: white;
+}
+
+.toet-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 28vh;
+}
+
+.background-shape{
+    height: 28vh;
+    background-color: $gaia-orange;
+    transform: skew(-20deg);
+    transform-origin: 0% -950%;
+    box-shadow: 2px 0px 0px 0px $gaia-orange,10px 0px 0px 0px $gaia-yellow,12px 0px 0px 0px $gaia-orange;
+    border-right: 0.5vw solid $gaia-yellow;
+}
+
+.background-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 21.75%;
+    height: auto;
+}
+
+.text-container{
+    margin: 1vw;
+}
+
+h3{
+    color: $gaia-orange;
+    font-size: 1vw;
+}
+
+p {
+    text-align: justify;
+    font-size: 0.8vw;
+}

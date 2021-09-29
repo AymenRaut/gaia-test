@@ -1,0 +1,44 @@
+@import "../../styles.scss";
+
+.banner{
+    height: 28vh;
+    background-color: $gaia-yellow;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info{
+    flex:2;
+    position: relative;
+}
+
+.info-text{
+    position: absolute;
+    top: 0;
+    left: 1vw;
+    width: 15vw;
+    color: white;
+    font-size: 1vw;
+}
+
+.background-shape{
+    height: 28vh;
+    background-color: $gaia-orange;
+    transform: skew(-20deg);
+    transform-origin: 0% -100%;
+    box-shadow: 0.1vw 0 0 0 $gaia-orange,0.5vw 0 0 0 $gaia-yellow,0.6vw 0 0 0 $gaia-orange;
+    border-right: 0.5vw solid $gaia-yellow;
+}
+
+.background-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    height: auto;
+}
+
+.carousel{
+    flex: 4;
+    height: 28vh;
+}

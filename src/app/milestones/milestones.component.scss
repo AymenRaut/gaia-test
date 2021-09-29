@@ -1,0 +1,69 @@
+@import "../../styles.scss";
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8vw;
+}
+
+.heading-block{
+    position: relative;
+
+    p{
+        position: absolute;
+        top: 0.5vh;
+        left: 1vw;
+        color: white;
+    }
+}
+
+.shape{
+    position:relative;
+    width: 20.5vw;
+    height: 6vh;
+    overflow:hidden;
+}
+
+.shape:after{
+   content: "";
+   position:absolute;
+   margin: -1vw 19.6vw;
+   width:2vw;
+   height:2vw;
+   transform:rotate(45deg);
+   box-shadow: 0 0 0 16vw $gaia-orange;
+}
+
+.body-block{
+    background-color: $gaia-green;
+    height: 50vh;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    p{
+        margin: 0;
+    }
+}
+
+.cubes{
+    display: grid;
+    grid-template-rows: 7.5vw 7.5vw 7.5vw;
+	grid-template-columns: 7.5vw 7.5vw;
+}
+
+.cube{
+    width: 7.5vw;
+    height: 7.5vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grey{
+    background-color: $gaia-grey;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,86 @@
+@import "../../styles.scss";
+
+.info-container{
+    height: 37vh;
+    background-image: url("../../assets/info-background.jpg");
+    background-size: auto;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info{
+    flex:2;
+    position: relative;
+}
+
+.info-text{
+    position: absolute;
+    top: 0;
+    left: 1vw;
+    width: 15vw;
+    color: black;
+
+    h1{
+        color: $gaia-orange;
+        font-size: 1.5vw;
+    }
+
+    p{
+        width: 50vw;
+        font-size: 1.1vw;
+        text-align: justify;
+    }
+}
+
+.background-shape{
+    height: 37vh;
+    width: 28vw;
+    background-color: $gaia-orange;
+    transform: skew(20deg);
+    transform-origin: 0% -1000%;
+    box-shadow: -0.1vw 0 0 0 $gaia-orange,-0.5vw 0 0 0 $gaia-yellow,-0.6vw 0 0 0 $gaia-orange;
+    border-left: 0.5vw solid $gaia-yellow;
+}
+
+.stakeholder-container{
+    transform: skew(-20deg);
+    text-align: center;
+    padding: 2vw 0;
+
+    img{
+        border-radius: 6vw;
+        margin: 1vh 0;
+        width: 40%;
+        height: auto;
+    }
+
+    p{
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 0.8vw;
+    }
+}
+
+.readmore-button{
+    position: relative;
+    left: 50vw;
+}
+
+.readmore-link{
+    text-decoration: none;
+    color:white;
+    position: absolute;
+    top: 0.75vw;
+    left: 1.5vw;
+    font-size: 0.75vw;
+}
+
+.trapezoid{
+    border-top: 2.5vw solid $gaia-orange;
+	border-right: 2vw solid transparent;
+	height: 0;
+	width: 6vw;
+    position: absolute;
+    top: 0;
+}
